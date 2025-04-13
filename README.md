@@ -20,3 +20,9 @@ The dataset is provided by [Motivate](https://www.motivateco.com/), a bike share
 - Pandas  
 - NumPy  
 
+## How to Run
+1. Clone the repository.
+2. Ensure the datasets are in the same directory as the script.
+3. Install the required dependencies:
+```bash
+pip install pandas numpy matplotlib seaborn wordcloud
