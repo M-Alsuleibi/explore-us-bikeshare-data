@@ -120,10 +120,13 @@ def trip_duration_stats(df):
     start_time = time.time()
 
     # TO DO: display total travel time
-
+    total_duration = df['Trip Duration'].sum()
 
     # TO DO: display mean travel time
+    mean_duration = df['Trip Duration'].mean()
 
+    print('Total Travel Time:', total_duration)
+    print('Mean Travel Time:', mean_duration)
 
     print("\nThis took %s seconds." % (time.time() - start_time))
     print('-'*40)
@@ -136,13 +139,24 @@ def user_stats(df):
     start_time = time.time()
 
     # TO DO: Display counts of user types
-
+    user_types = df['User Type'].value_counts()
+    print('User Types:\n', user_types)
 
     # TO DO: Display counts of gender
-
+    if 'Gender' in df.columns:
+        genders = df['Gender'].value_counts()
+        print('Genders:\n', genders)
 
     # TO DO: Display earliest, most recent, and most common year of birth
+    if 'Birth Year' in df.columns:
+        # Solution 1: Using basic pandas methods for birth year stats
+        earliest_year = df['Birth Year'].min()
+        most_recent_year = df['Birth Year'].max()
+        most_common_year = df['Birth Year'].mode()[0]
 
+        print('Earliest Year of Birth:', earliest_year)
+        print('Most Recent Year of Birth:', most_recent_year)
+        print('Most Common Year of Birth:', most_common_year)
 
     print("\nThis took %s seconds." % (time.time() - start_time))
     print('-'*40)
