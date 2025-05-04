@@ -26,3 +26,13 @@ The dataset is provided by [Motivate](https://www.motivateco.com/), a bike share
 3. Install the required dependencies:
 ```bash
 pip install pandas numpy matplotlib seaborn wordcloud
+```
+## Criteria:
+- README.md file is filled out in an appropriate way using the headers provided or another reasonable outline of the bikeshare project.
+
+
+- The student bikeshare file from an earlier project has been added to the repository. You can see that there are differences between the file in the master and refactor branches than the documentation branch.
+
+- Multiple commits were made in different branches.
+
+- Files should have changes and those changes should be committed as described in the tasks. The messages for each should be descriptive of the changes made.
